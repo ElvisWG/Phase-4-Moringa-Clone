@@ -8,7 +8,7 @@ function StudentList({ onSearching }) {
     onSearching(search);
   }
   return (
-    <div >
+    <div>
       <div class="flex justify-center">
         <div class="mb-3 xl:w-96">
           <div class="input-group relative flex flex-wrap items-stretch w-full mb-4 rounded">
@@ -100,12 +100,12 @@ function StudentList({ onSearching }) {
                         className="text-green-500 hover:text-green-700"
                         href="#"
                       >
-                        Edit
+                        10
                       </a>
                     </td>
                     <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
                       <a className="text-red-500 hover:text-red-700" href="#">
-                        Delete
+                        My Answers
                       </a>
                     </td>
                   </tr>
@@ -124,12 +124,12 @@ function StudentList({ onSearching }) {
                         className="text-green-500 hover:text-green-700"
                         href="#"
                       >
-                        Edit
+                        25
                       </a>
                     </td>
                     <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
                       <a className="text-red-500 hover:text-red-700" href="#">
-                        Delete
+                        My Answers
                       </a>
                     </td>
                   </tr>
@@ -148,12 +148,12 @@ function StudentList({ onSearching }) {
                         className="text-green-500 hover:text-green-700"
                         href="#"
                       >
-                        Edit
+                        20
                       </a>
                     </td>
                     <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
                       <a className="text-red-500 hover:text-red-700" href="#">
-                        Delete
+                        My Answers
                       </a>
                     </td>
                   </tr>
