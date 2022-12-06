@@ -2,16 +2,18 @@
 import './App.css';
 import LoginPage from "./components/Login/login";
 import RegisterPage from './components/Register/Register';
-import { ReviewCard } from './components/Reviews/ReviewCard';
-import { ReviewForm } from './components/Reviews/ReviewForm';
+// import { ReviewCard } from './components/Reviews/ReviewCard';
+// import { ReviewForm } from './components/Reviews/ReviewForm';
+import Reviews from './components/Reviews/reviews';
 
 function App() {
   return (
     <div className="App">
       {/* <LoginPage />
       <RegisterPage /> */}
-      <ReviewCard />
-      <ReviewForm />
+      {/* <ReviewCard />
+      <ReviewForm /> */}
+      <Reviews />
     </div>
   );
 }

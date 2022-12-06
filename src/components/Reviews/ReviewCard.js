@@ -1,21 +1,22 @@
 import React from 'react'
 import dp from '../assets/SteveJobs1.jpg'
 
-export const ReviewCard = () => {
+export const ReviewCard = ({review: {body}}) => {
   return (
-    <div className='grid justify-items-center'>
-        <div className="bg-slate-100 w-1/2 rounded-xl p-9 md:p-0 dark:bg-slate-800">
-            <figure class="bg-slate-100 rounded-lg p-8 md:p-0 dark:bg-slate-800">
-            <div className="flex bg-slate-100 rounded-xl p-9 dark:bg-slate-800">
-  <img class="w-24 h-24 rounded-full mx-auto" src={dp} alt="" width="384" height="512" />
+    <div className='grid justify-items-center ml-8 mb-4'>
+        <div className="bg-slate-100 w-1/2 rounded-xl p-9 md:p-0 dark:bg-slate-900">
+            <figure class="bg-slate-100 rounded-lg p-8 md:p-0 dark:bg-slate-900">
+            <div className="flex bg-slate-100 rounded-xl p-9 dark:bg-slate-900">
+  <img className="rounded-full h-14 w-14 mx-auto" src={dp} alt=""/>
   {/* <figcaption class="font-medium"> */}
-  <div class="pt-6 text-center space-y-4">
+  <div className="pt-6 flex-initial w-96 text-center space-y-4">
     <blockquote>
-    <div class="text-sky-500 dark:text-sky-400">
+    <div className="text-teal-500 font-medium">
         Steve Jobs, TM
       </div>
-      <p class="text-lg font-medium">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta modi hic
+      <p className="text-l">
+        {body}
+        {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dicta modi hic */}
       </p>
     </blockquote>
   </div>
