@@ -1,6 +1,23 @@
 import React, { useState } from "react";
+import { set } from "react-hook-form";
 
 function StudentList({ onSearching }) {
+  const students = [
+    {
+      name: "Jane Doe",
+      email: "jane@gmail.com",
+      score: "10",
+      answer: "Ruby gem",
+    },
+
+    {
+      name: "Jane Doe",
+      email: "jane@gmail.com",
+      score: "10",
+      answer: "Ruby gem",
+    },
+  ];
+
   const [search, setSearch] = useState("");
 
   function handleChange(e) {
@@ -44,119 +61,70 @@ function StudentList({ onSearching }) {
           </div>
         </div>
       </div>
-
-      <div className="flex flex-col">
-        <div className="overflow-x-auto">
-          <div className="p-1.5 w-full inline-block align-middle">
-            <div className="overflow-hidden border rounded-lg">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
+      <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table className="min-w-full text-center">
+                <thead className="border-b bg-gray-800">
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase "
+                      class="text-sm font-medium text-white px-6 py-4"
                     >
-                      ID
+                      #
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase "
+                      class="text-sm font-medium text-white px-6 py-4"
                     >
                       Name
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase "
+                      class="text-sm font-medium text-white px-6 py-4"
                     >
                       Email
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase "
+                      class="text-sm font-medium text-white px-6 py-4"
                     >
                       Scores
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase "
+                      class="text-sm font-medium text-white px-6 py-4"
                     >
-                      Student Answers
+                      Answers
                     </th>
+
+                    {/* <th>Bus</th> */}
+                    {/* <th>Edit Details</th> */}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                      1
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                      Jone Doe
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                      jonne62@gmail.com
-                    </td>
-                    <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                      <a
-                        className="text-green-500 hover:text-green-700"
-                        href="#"
-                      >
-                        10
-                      </a>
-                    </td>
-                    <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                      <a className="text-red-500 hover:text-red-700" href="#">
-                        My Answers
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                      2
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                      Jone Doe
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                      jonne62@gmail.com
-                    </td>
-                    <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                      <a
-                        className="text-green-500 hover:text-green-700"
-                        href="#"
-                      >
-                        25
-                      </a>
-                    </td>
-                    <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                      <a className="text-red-500 hover:text-red-700" href="#">
-                        My Answers
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                      3
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                      Jone Doe
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                      jonne62@gmail.com
-                    </td>
-                    <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                      <a
-                        className="text-green-500 hover:text-green-700"
-                        href="#"
-                      >
-                        20
-                      </a>
-                    </td>
-                    <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                      <a className="text-red-500 hover:text-red-700" href="#">
-                        My Answers
-                      </a>
-                    </td>
-                  </tr>
+                <tbody>
+                  {students.map((student, index) => (
+                    <tr key={index} class="bg-white border-b">
+                      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        1
+                      </td>
+                      <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        {student.name}
+                      </td>
+                      <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        {student.email}
+                      </td>
+                      <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        {student.score}
+                      </td>
+                      <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        {student.answer}
+                      </td>
+                      {/* <td>{booking.customer.bus}</td> */}
+                      {/* <td  onClick={handleClick}style={{ color: "pink" }}>Edit</td> */}
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
