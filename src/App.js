@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import LoginPage from "./components/Login/login";
 import MainPage from "./Admin/MainPage";
@@ -22,16 +22,6 @@ import StudentMainPage from "./Student/StudentMainPage";
 import Studentinvitationform from "./components/Assement/Studentinvitationform";
 
 function App() {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    // auto-login
-    fetch("https://arcane-lake-46873.herokuapp.com/me").then((r) => {
-      if (r.ok) {
-        r.json().then((user) => setUser(user));
-      }
-    });
-  }, []);
 
   return (
     <div className="App">

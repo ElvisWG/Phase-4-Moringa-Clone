@@ -9,7 +9,6 @@ function Studentinvitationform() {
     .then((res) => res.json())
     .then((data) => setInvites(data));
   }
-  console.log(invites);
     
   return (
     <div>
