@@ -7,8 +7,8 @@ function Home() {
   const styles = {
      backgroundImage: `url(${HackerLogo})`,
    
-    margin: "1px",
-     height: "150%",
+     magin: "0",
+     height: "100%",
   };
 
   return (
