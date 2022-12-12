@@ -5,7 +5,6 @@ import StudentList from "../components/Pages/StudentList";
 import Reviews from "../components/Pages/reviews";
 import CreateAssessment from "../components/Pages/CreateAssement";
 import InvitationForm from "../components/Pages/InvitationForm";
-import Question from "./Quiz";
 
 
 function NavPage() {
@@ -18,7 +17,6 @@ function NavPage() {
                 <Route  path="/studentlist" element={<StudentList/>}/>
                 <Route  path="/invitationform" element={<InvitationForm />}/>
                 <Route  path="/reviews" element={<Reviews/>}/>
-                <Route path="questions" element={<Question />} />
             </Routes>
 
     )
