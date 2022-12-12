@@ -77,5 +77,6 @@ Collins Mokaya-  https://github.com/collinsmokaya28
 
 ### Frontend Team
 
-Allan Kimurgor -  https://github.com/Kimurgor02
+Allan Kimurgor -  https://github.com/Kimurgor02 
+
 Elvis Gatukui-  https://github.com/ElvisWG
