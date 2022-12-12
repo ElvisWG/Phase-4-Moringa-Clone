@@ -1,5 +1,4 @@
 import React from 'react'
-import dp from '../assets/SteveJobs1.jpg'
 
 export const ReviewCard = ({review: {body}}) => {
   return (
@@ -7,12 +6,10 @@ export const ReviewCard = ({review: {body}}) => {
         <div className="bg-slate-100 w-1/2 rounded-xl p-9 md:p-0 dark:bg-slate-900">
             <figure class="bg-slate-100 rounded-lg p-8 md:p-0 dark:bg-slate-900">
             <div className="flex bg-slate-100 rounded-xl p-9 dark:bg-slate-900">
-  <img className="rounded-full h-14 w-14 mx-auto" src={dp} alt=""/>
-  {/* <figcaption class="font-medium"> */}
   <div className="pt-6 flex-initial w-96 text-center space-y-4">
     <blockquote>
     <div className="text-teal-500 font-medium">
-        Steve Jobs, TM
+Technical Mentor
       </div>
       <p className="text-l">
         {body}

@@ -1,13 +1,12 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
 import Dashboard from "./Dashboard";
-import StudentList from "../components/StudentList/StudentList";
-import Reviews from "../components/Reviews/reviews";
-import CreateAssessment from "../components/Assement/CreateAssement";
-import InvitationForm from "../components/Assement/InvitationForm";
+import StudentList from "../components/Pages/StudentList";
+import Reviews from "../components/Pages/reviews";
+import CreateAssessment from "../components/Pages/CreateAssement";
+import InvitationForm from "../components/Pages/InvitationForm";
+import Question from "./Quiz";
 
-// import MainPage from "./MainPage"
-// import Admin from "./Admin";
 
 function NavPage() {
     return (
@@ -19,6 +18,7 @@ function NavPage() {
                 <Route  path="/studentlist" element={<StudentList/>}/>
                 <Route  path="/invitationform" element={<InvitationForm />}/>
                 <Route  path="/reviews" element={<Reviews/>}/>
+                <Route path="questions" element={<Question />} />
             </Routes>
 
     )

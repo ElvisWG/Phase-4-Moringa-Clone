@@ -23,11 +23,6 @@ export const SidebarData=[
         path: "",
         icon: <FcIcons.FcDepartment />,
       },
-      // {
-      //   title: "StudentList",
-      //   path: "/studentlist",
-      //   icon: <FaIcons.FaUsers />,
-      // },
       {
         title: "Invitation",
         path: "/studentinvitationform",
@@ -38,11 +33,6 @@ export const SidebarData=[
         path: "/studentReviews",
         icon: <MdIcons.MdOutlineReviews />,
       },
-      // {
-      //   title: "Routes",
-      //   path: "/mainPageroutes",
-      //   icon: <MdIcons.MdRequestPage />,
-      // },
       {
         title: "Logout",
         path: "/",

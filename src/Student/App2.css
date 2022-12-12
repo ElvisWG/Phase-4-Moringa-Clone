@@ -1,26 +1,26 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   box-sizing: border-box;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   overflow: scroll;
 }
 .nav-bar {
-  height: 60px;
-  min-width: 80%;
-  background-color: #030a32;
+  height: 65px;
+  min-width: 85%;
+  background-color: #435d7d;
   display: flex;
   align-items: center;
-  padding: 10px;
-  padding-left: 30px;
+  padding: 15px;
+  padding-left: 40px;
 }
 .menu-bars {
   color: white;
   font-size: 1.5rem;
 }
-.title-admin {
-  color: white;
+.title-cluster {
+  color: paleturquoise;
   font-size: 1.5rem;
   padding-left: 40px;
 }
@@ -267,7 +267,6 @@ table.table .avatar {
   box-shadow: none;
   background: #ddd;
 }
-/* Modal styles */
 .modal .modal-dialog {
   max-width: 400px;
 }

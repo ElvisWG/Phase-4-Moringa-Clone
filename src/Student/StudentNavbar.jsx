@@ -8,7 +8,7 @@ function Navbar() {
           <FaBars/>
         </div>
         <div>
-          <p className='title-admin'>STUDENT</p>
+          <p className='title-cluster'>STUDENT</p>
         </div>
       </div>
     </>

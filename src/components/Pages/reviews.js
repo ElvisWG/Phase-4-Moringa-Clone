@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {ReviewForm} from "./ReviewForm";
-import {ReviewCard} from "./ReviewCard"
+import {ReviewForm} from "../Pages/ReviewForm";
+import {ReviewCard} from "../Pages/ReviewCard"
 
 export default function Reviews() {
 

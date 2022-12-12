@@ -1,8 +1,8 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
 import Dashboard from "./Dashboard";
-import StudentList from "../components/StudentList/StudentList";
-import Reviews from "../components/Reviews/reviews";
+import StudentList from "../components/Pages/StudentList";
+import Reviews from "../components/Pages/reviews";
 
 import MainPage from "./MainPage"
 // import Admin from "./Admin";

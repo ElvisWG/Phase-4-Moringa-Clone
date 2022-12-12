@@ -3,7 +3,7 @@ import { Link, Navigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const RegisterPage = () => {
+const SignUpPage = () => {
   // State to store the values of the input fields
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -51,11 +51,11 @@ const RegisterPage = () => {
       .then((data) => {
         if (data.error) {
           toast.error(data.message, {
-            position: "top-center",
+            position: "top-left",
           });
         } else {
-          toast.success("Signed up successfully", {
-            position: "top-center",
+          toast.success("Sign up successful", {
+            position: "top-left",
           });
         }
 
@@ -123,7 +123,7 @@ const RegisterPage = () => {
           </div>
           <div className="mb-6">
             <label className="block text-gray-700 text-sm font-bold mb-2">
-              Select your role
+              Cluster
             </label>
             <label className="px-3">
               <input
@@ -146,23 +146,23 @@ const RegisterPage = () => {
                   setStudent(false);
                 }}
               />
-              Mentor
+              Technical-Mentor
             </label>
           </div>
 
           <div className="flex items-center justify-between">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-lime-400 hover:bg-lime-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
               onClick={handleRegister}
             >
-              Register
+             SignUp
             </button>
             <Link
               to="/login"
-              className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+              className="inline-block align-baseline font-bold text-sm text-red-500 hover:text-red-500"
             >
-              Already have an account?
+              Have an account?Login
             </Link>
           </div>
         </form>
@@ -173,4 +173,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+export default SignUpPage;

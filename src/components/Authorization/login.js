@@ -7,11 +7,11 @@ const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState("");
-  // Authenticate the user using the provided username and password
+  
   const handleSubmit = (e) => {
-    // TODO: Implement authentication logic
+    //Authenticating Login
     e.preventDefault();
-    fetch("https://arcane-lake-46873.herokuapp.com/login", {
+    fetch("http://localhost:3000/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -77,22 +77,19 @@ const LoginPage = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-            >
-              Sign In
+              className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+              
+            
+              Log In
             </button>
           </div>
           <div className="mt-3">
-            <button className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
-              <Link to="/register">Don't have an account?. Register</Link>
+            <button className="inline-block align-baseline font-bold text-sm text-red-500 hover:text-red-700">
+              <Link to="/register">Don't Have an account?. Click Here To SignUp</Link>
             </button>
           </div>
         </form>
-        <p className="text-center text-gray-500 text-xs absolute bottom-10">
-          &copy;2022 Hack The Code. All rights reserved.
-        </p>
-      </div>
+             </div>
       <ToastContainer />
     </div>
   );
